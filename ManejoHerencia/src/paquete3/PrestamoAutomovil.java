@@ -5,8 +5,8 @@
  */
 package paquete3;
 
-import paquete2.Persona;
-import paquete2.Prestamo;
+import paquete2.*;
+
 
 /**
  *
@@ -81,8 +81,8 @@ Personalizar el método toString; usar el método de la superclase*/
     }
     
     
-
-    public String toSting() {
+    @Override
+    public String toString() {
         String cadena = String.format("%sCiudad: %s\n"
                 + "Tipo de automóvil: %s\n"
                 + "Marcad del automóvil: %s\n"

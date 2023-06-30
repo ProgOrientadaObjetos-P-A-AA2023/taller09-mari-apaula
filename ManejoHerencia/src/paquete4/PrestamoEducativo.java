@@ -45,15 +45,15 @@ Personalizar el método toString; usar el método de la superclase. El método
     }
 
     public void establecerNivelEstudio(String a) {
-        this.nivelEstudio = a;
+       nivelEstudio = a;
     }
 
     public void establecerInstitucion(InstitucionEducativa a) {
-        this.institucion = a;
+        institucion = a;
     }
 
     public void establecerValorCarrera(double v) {
-        this.valorCarrera = v;
+        valorCarrera = v;
     }
 
     public void calcularValorMensualC() {

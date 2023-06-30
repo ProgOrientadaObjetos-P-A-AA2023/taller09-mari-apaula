@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 import paquete2.*;
-import paquete3.*;
+import paquete3.PrestamoAutomovil;
 import paquete4.*;
 
 /**
@@ -21,8 +21,8 @@ public class Ejecutor {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        String cadena = "PRESTAMO Automovil\n";
-        String informeE = "PRESTAMO Educativo\n";
+        String cadena = "\tPRESTAMO AUTOMOVIL\n";
+        String informeE = "\tPRESTAMO EDUCATIVO\n";
         ArrayList<PrestamoAutomovil> listaDistancia = new ArrayList<>();
         boolean letra = true;
 
@@ -62,9 +62,9 @@ public class Ejecutor {
                 
                 System.out.println("Ingrese el tipo del automovil");
                 String tipo = entrada.nextLine();
-                System.out.println("Ingrese número de créditos");
+                System.out.println("Ingrese la marca del automovil");
                 String marca = entrada.nextLine();
-                System.out.println("Ingrese costo de créditos");
+                System.out.println("Ingrese costo del automovil");
                 double valorAutmovil = entrada.nextDouble();
                 entrada.nextLine();
                 
@@ -139,7 +139,7 @@ public class Ejecutor {
         } while (letra);
         
         System.out.printf("%s\n"
-                + "-------------------------------------------------"
+                + "-------------------------------------------------\n"
                 + "%s",
                 cadena, informeE);
     }

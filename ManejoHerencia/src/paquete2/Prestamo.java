@@ -31,33 +31,33 @@ préstamo.*/
         ciudad = c;
     }
 
-    public void setBeneficiario(Persona beneficiario) {
-        this.beneficiario = beneficiario;
+    public void establecerBeneficiario(Persona b) {
+        beneficiario = b;
     }
 
-    public void setTiempoMeses(int tiempoMeses) {
-        this.tiempoMeses = tiempoMeses;
+    public void establecerTiempoMeses(int t) {
+        tiempoMeses = t;
     }
 
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    public void establecerCiudad(String c) {
+        ciudad = c;
     }
 
-    public Persona getBeneficiario() {
+    public Persona obtenerBeneficiario() {
         return beneficiario;
     }
 
-    public int getTiempoMeses() {
+    public int obtenerTiempoMeses() {
         return tiempoMeses;
     }
 
-    public String getCiudad() {
+    public String obtenerCiudad() {
         return ciudad;
     }
 
     @Override
     public String toString() {
-        String cadena = String.format("\tPRESTAMO\nBeneficiario\n"
+        String cadena = String.format("\tBeneficiario\n"
                 + "Nombre: %s\n"
                 + "Apellido: %s\n"
                 + "Username: %s\n"
